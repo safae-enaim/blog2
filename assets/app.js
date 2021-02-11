@@ -5,6 +5,7 @@ import { HashRouter, Route, Switch, withRouter } from 'react-router-dom';
 import './css/app.css';
 import './css/bootstrap.min.css';
 import Admin from './js/components/Admin';
+import Articles from './js/components/Articles';
 import CreateArticle from './js/components/CreateArticle';
 import Home from './js/components/Home';
 
@@ -19,8 +20,7 @@ const App = () => {
                         <Route path="/home" component={Home}/>
                         <Route path='/admin' component={Admin}/>
                         <Route path='/createArticle' component={CreateArticle}/>
-
-
+                        <Route path='/articles' component={Articles}/>
                     </Switch>
                 </HashRouter>
             </React.StrictMode>

@@ -2,8 +2,7 @@
     
 import React, {Component} from 'react';
 import {Route, Switch,Redirect, Link, withRouter} from 'react-router-dom';
-import Admin from './Admin';
-import CreateArticle from './CreateArticle';
+import Articles from './Articles';
 
     
 class Home extends Component {
@@ -18,12 +17,14 @@ class Home extends Component {
                            <li className="nav-item">
                                <Link className={"nav-link"} to={"/articles"}> Articles </Link>
                            </li>
-                      
+                           
     
                        </ul>
                    </div>
                </nav>
-              
+               <Switch>
+                   <Route path="/articles" component={Articles} />
+               </Switch>
            </div>
         )
     }

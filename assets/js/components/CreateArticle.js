@@ -154,6 +154,9 @@ const CreateArticle = ({history}) => {
                     <div className="form-group">
                         <button type="submit" className="btn btn-outline-info" >Valider</button> 
                     </div>
+                    <div className="form-group">
+                    <a href="/#/admin" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Retour</a>
+                    </div>
                 </center>    
             </form>
             <div> </div>

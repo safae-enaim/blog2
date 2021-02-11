@@ -17,9 +17,13 @@ function create(article) {
             .then((response) => response.data.id);
 }
 
+function remove(id) {
+    return axios.delete(url + `/articles/${id}`);
+  }
 
 export default {
     findAll,
     getArticle,
     create,
+    remove
 }

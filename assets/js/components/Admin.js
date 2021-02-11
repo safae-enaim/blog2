@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { Route, Switch } from 'react-router-dom';
+import CreateArticle from './CreateArticle';
 
 
     
@@ -26,11 +28,14 @@ class Admin extends Component {
                 <li class="nav-item">
                   <a class="nav-link" href="#">Modifier un article</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/#/home">Retour User</a>
+                </li>
               </ul>
              
             </div>
           </nav>
-       
+          
           </div>
         )
     }
