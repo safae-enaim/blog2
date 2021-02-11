@@ -126,6 +126,17 @@ const CreateArticle = ({history}) => {
                             required/>
                         {error && <p className="invalid-feedback">{error}</p>}
                     </div>
+                    <div className="col-md-6">
+                    <label htmlFor="password">Categorie</label>
+                    <input 
+                        value={article.categorie}
+                        type="text"
+                        onChange={handleChange} 
+                        name="categorie"
+                        className="form-control"
+                        rows="4"
+                        required />
+                </div>
                
                 </div>      
                 
@@ -139,16 +150,7 @@ const CreateArticle = ({history}) => {
                         rows="4"
                         required />
                 </div>
-                <div className="form-group">
-                    <label htmlFor="password">Categorie</label>
-                    <textarea 
-                        value={article.categorie}
-                        onChange={handleChange} 
-                        name="categorie"
-                        className="form-control"
-                        rows="4"
-                        required />
-                </div>
+                
                 
                  <center>      
                     <div className="form-group">
